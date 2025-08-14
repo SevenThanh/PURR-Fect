@@ -83,7 +83,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span className="text-blue-500">Apartment</span>
+                <span className="text-gray-900">Apartment</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -94,7 +94,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-              <span className="text-blue-500">House with yard</span>
+              <span className="text-gray-900">House with yard</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -105,7 +105,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span className="text-blue-500">Farm/Rural</span>
+                <span className="text-gray-900">Farm/Rural</span>
               </label>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span className="text-green-500">Less than 4 hours away daily</span>
+                <span className="text-gray-900">Less than 4 hours away daily</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -138,7 +138,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span className="text-green-500">4-8 hours away daily</span>
+                <span className="text-gray-900">4-8 hours away daily</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -149,7 +149,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span className="text-green-500">More than 8 hours away daily</span>
+                <span className="text-gray-900">More than 8 hours away daily</span>
               </label>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function QuizPage() {
               />
               <div className="text-center">
                 <span className="text-2xl font-bold text-orange-500">{formData.activityLevel}</span>
-                <span className="text-gray-600">/10</span>
+                <span className="text-gray-800">/10</span>
               </div>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span className="text-yellow-500">First-time owner</span>
+                <span className="text-gray-900">First-time owner</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -205,7 +205,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span className="text-yellow-500">Some experience</span>
+                <span className="text-gray-900">Some experience</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -216,7 +216,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span className="text-yellow-500">Very experienced</span>
+                <span className="text-gray-900">Very experienced</span>
               </label>
             </div>
           </div>
@@ -248,7 +248,7 @@ export default function QuizPage() {
                         onChange={() => toggleTrait(trait)}
                         className="text-pink-500"
                       />
-                      <span className="capitalize text-red-500">{trait}</span>
+                      <span className="capitalize text-gray-900">{trait}</span>
                     </label>
                   ))}
                 </div>
