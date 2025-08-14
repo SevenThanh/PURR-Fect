@@ -69,7 +69,7 @@ export default function QuizPage() {
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <Home className="text-blue-500 w-6 h-6" />
-              <h2 className="text-xl font-semibold">Living Situation</h2>
+              <h2 className="text-xl font-semibold text-blue-500">Living Situation</h2>
             </div>
             <p className="text-gray-600 mb-4">Tell us about your home environment</p>
             
@@ -83,7 +83,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span>Apartment</span>
+                <span className='text-black'>Apartment</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -113,7 +113,7 @@ export default function QuizPage() {
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <Clock className="text-green-500 w-6 h-6" />
-              <h2 className="text-xl font-semibold">Your Schedule</h2>
+              <h2 className="text-xl font-semibold text-green-500">Your Schedule</h2>
             </div>
             <p className="text-gray-600 mb-4">How much time can you spend with your cat?</p>
             
@@ -157,7 +157,7 @@ export default function QuizPage() {
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <Activity className="text-orange-500 w-6 h-6" />
-              <h2 className="text-xl font-semibold">Activity Level</h2>
+              <h2 className="text-xl font-semibold text-orange-500">Activity Level</h2>
             </div>
             <p className="text-gray-600 mb-4">How active are you? (1 = Low, 10 = Very Active)</p>
             
@@ -180,7 +180,7 @@ export default function QuizPage() {
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <Star className="text-yellow-500 w-6 h-6" />
-              <h2 className="text-xl font-semibold">Experience</h2>
+              <h2 className="text-xl font-semibold text-yellow-500">Experience</h2>
             </div>
             <p className="text-gray-600 mb-4">What&apos;s your experience with cats?</p>
             
@@ -221,9 +221,8 @@ export default function QuizPage() {
             </div>
           </div>
 
-          {/* Preferences */}
           <div className="bg-white rounded-lg p-6 shadow-sm">
-            <h2 className="text-xl font-semibold mb-4">Preferences</h2>
+            <h2 className="text-xl font-semibold mb-4 text-blue-600">Preferences</h2>
             
             <div className="space-y-6">
               <div>
@@ -234,12 +233,12 @@ export default function QuizPage() {
                     onChange={(e) => updateFormData({ allergies: e.target.checked })}
                     className="text-pink-500"
                   />
-                  <span>I have allergies (prefer hypoallergenic breeds)</span>
+                  <span className='text-pink-500'>I have allergies (prefer hypoallergenic breeds)</span>
                 </label>
               </div>
               
               <div>
-                <p className="font-medium mb-3">Desired personality traits:</p>
+                <p className="font-medium mb-3 text-blue-500">Desired personality traits:</p>
                 <div className="grid grid-cols-2 gap-3">
                   {availableTraits.map((trait) => (
                     <label key={trait} className="flex items-center space-x-3 cursor-pointer">
@@ -260,7 +259,7 @@ export default function QuizPage() {
           <div className="bg-white rounded-lg p-6 shadow-sm">
             <div className="flex items-center gap-2 mb-4">
               <MapPin className="text-purple-500 w-6 h-6" />
-              <h2 className="text-xl font-semibold">Location</h2>
+              <h2 className="text-xl font-semibold text-purple-500">Location</h2>
             </div>
             <p className="text-gray-600 mb-4">Where should we search for cats?</p>
             
@@ -269,7 +268,7 @@ export default function QuizPage() {
               placeholder="Enter your ZIP code"
               value={formData.zipCode}
               onChange={(e) => updateFormData({ zipCode: e.target.value })}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 text-pink-500"
               required
             />
           </div>
