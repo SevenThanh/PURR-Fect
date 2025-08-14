@@ -1,6 +1,6 @@
 # PurrfectMatch - Cat Adoption Matching System
 
-A CLI application that uses real APIs to match users with adoptable cats based on lifestyle compatibility.
+Match users with adoptable cats based on lifestyle compatibility.
 
 ## Problem & Solution
 
