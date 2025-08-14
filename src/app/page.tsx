@@ -107,6 +107,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-2 mb-4">
             <Heart className="w-6 h-6 text-pink-400" />
             <span className="text-xl font-semibold">PurrfectMatch</span>
+            
           </div>
           <p className="text-gray-400">
             Helping cats find their forever homes through better compatibility matching

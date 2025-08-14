@@ -36,7 +36,6 @@ export interface CatProfile {
   shelterName: string
   distance?: number
   
-  // Derived compatibility attributes
   energyLevel: number // 1-10
   independence: number // 1-10
   personalityTraits: string[]
