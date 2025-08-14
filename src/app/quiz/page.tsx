@@ -83,7 +83,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span className='text-black'>Apartment</span>
+                <span className="text-blue-500">Apartment</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -94,7 +94,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span>House with yard</span>
+              <span className="text-blue-500">House with yard</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -105,7 +105,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ homeType: e.target.value as HomeType })}
                   className="text-pink-500"
                 />
-                <span>Farm/Rural</span>
+                <span className="text-blue-500">Farm/Rural</span>
               </label>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span>Less than 4 hours away daily</span>
+                <span className="text-green-500">Less than 4 hours away daily</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -138,7 +138,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span>4-8 hours away daily</span>
+                <span className="text-green-500">4-8 hours away daily</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -149,7 +149,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ hoursAway: parseInt(e.target.value) })}
                   className="text-pink-500"
                 />
-                <span>More than 8 hours away daily</span>
+                <span className="text-green-500">More than 8 hours away daily</span>
               </label>
             </div>
           </div>
@@ -194,7 +194,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span>First-time owner</span>
+                <span className="text-yellow-500">First-time owner</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -205,7 +205,7 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span>Some experience</span>
+                <span className="text-yellow-500">Some experience</span>
               </label>
               <label className="flex items-center space-x-3 cursor-pointer">
                 <input
@@ -216,13 +216,13 @@ export default function QuizPage() {
                   onChange={(e) => updateFormData({ experience: e.target.value as ExperienceLevel })}
                   className="text-pink-500"
                 />
-                <span>Very experienced</span>
+                <span className="text-yellow-500">Very experienced</span>
               </label>
             </div>
           </div>
 
           <div className="bg-white rounded-lg p-6 shadow-sm">
-            <h2 className="text-xl font-semibold mb-4 text-blue-600">Preferences</h2>
+            <h2 className="text-xl font-semibold mb-4 text-gray-900">Preferences</h2>
             
             <div className="space-y-6">
               <div>
@@ -233,12 +233,12 @@ export default function QuizPage() {
                     onChange={(e) => updateFormData({ allergies: e.target.checked })}
                     className="text-pink-500"
                   />
-                  <span className='text-pink-500'>I have allergies (prefer hypoallergenic breeds)</span>
+                  <span className='text-gray-900'>I have allergies (prefer hypoallergenic breeds)</span>
                 </label>
               </div>
               
               <div>
-                <p className="font-medium mb-3 text-blue-500">Desired personality traits:</p>
+                <p className="text-xl font-semibold mb-4 text-red-500">Desired personality traits:</p>
                 <div className="grid grid-cols-2 gap-3">
                   {availableTraits.map((trait) => (
                     <label key={trait} className="flex items-center space-x-3 cursor-pointer">
@@ -248,7 +248,7 @@ export default function QuizPage() {
                         onChange={() => toggleTrait(trait)}
                         className="text-pink-500"
                       />
-                      <span className="capitalize">{trait}</span>
+                      <span className="capitalize text-red-500">{trait}</span>
                     </label>
                   ))}
                 </div>
