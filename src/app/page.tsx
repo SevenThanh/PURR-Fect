@@ -72,7 +72,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl font-bold text-blue-600">1</span>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Take Quiz</h3>
+            <h3 className="text-lg font-semibold mb-2 text-blue-600">Take Quiz</h3>
             <p className="text-gray-600">Answer questions about your lifestyle, experience, and preferences</p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl font-bold text-green-600">2</span>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Analysis</h3>
+            <h3 className="text-lg font-semibold mb-2  text-green-600">Analysis</h3>
             <p className="text-gray-600">Our algorithm analyzes real adoptable cats from local shelters</p>
           </div>
 
@@ -88,7 +88,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl font-bold text-purple-600">3</span>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Get Matches</h3>
+            <h3 className="text-lg font-semibold mb-2 text-purple-600">Get Matches</h3>
             <p className="text-gray-600">Receive compatibility scores and detailed explanations</p>
           </div>
 
@@ -96,7 +96,7 @@ export default function Home() {
             <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <span className="text-2xl font-bold text-pink-600">4</span>
             </div>
-            <h3 className="text-lg font-semibold mb-2">Find Love</h3>
+            <h3 className="text-lg font-semibold mb-2 text-pink-600">Find Love</h3>
             <p className="text-gray-600">Contact shelters and meet your perfect feline companion</p>
           </div>
         </div>
